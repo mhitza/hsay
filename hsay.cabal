@@ -16,6 +16,7 @@ copyright:           Alexander Berntsen 2014
 category:            Accessibility
 build-type:          Simple
 cabal-version:       >=1.10
+data-files:          data/flip.mp3
 
 executable hsay
   hs-source-dirs:      src-exec
@@ -25,4 +26,3 @@ executable hsay
                        process >= 1.2.0.0 && < 1.3.0.0,
                        unix >= 2.7.0.0 && < 2.8.0.0
   default-language:    Haskell2010
-  Data-Files:          data/flip.mp3
