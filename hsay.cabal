@@ -2,7 +2,7 @@
 -- see http://haskell.org/cabal/users-guide/
 
 name:                hsay
-version:             0.1.0.0
+version:             1.0.0
 synopsis:            (ab)Use Google Translate as a speech synthesiser
 description:         (ab)Use Google Translate as a speech synthesiser.
 
