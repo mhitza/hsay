@@ -58,8 +58,8 @@ import System.Process
 
 import Paths_hsay
 
-data Language    = MkLang  {lang :: String}
-                 | DefLang {lang :: String}
+data Language = MkLang  {lang :: String}
+              | DefLang {lang :: String}
 
 defprogopts :: (String, [String])
 defprogopts = ("mpg123", ["-q"])
