@@ -23,7 +23,7 @@ source-repository head
 executable hsay
   default-language:  Haskell2010
   hs-source-dirs:    src-exec
-  main-is:           Hsay.hs
+  main-is:           hsay.hs
   build-depends:     base >=4.7 && <4.8,
                      HTTP >= 4000.2 && < 4000.3,
                      process >= 1.2.0.0 && < 1.3.0.0,
