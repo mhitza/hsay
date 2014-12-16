@@ -37,6 +37,10 @@ import System.Exit
   (
   exitWith,
   )
+import System.Hclip
+  (
+  getClipboard,
+  )
 import System.IO
   (
   hFlush,
@@ -92,6 +96,9 @@ resl l f = do
   n <- getLine
   case take 5 n of
     "#LANG" -> resl (MkLang $ drop 6 n) f
+    "#CLIP" -> do
+      c <- getClipboard
+      fork (build l (words c) f) >> resl l f
     _       -> fork (build l (words n) f) >>  resl l f
  
 fork :: (FilePath, [String]) -> IO ExitCode
