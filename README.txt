@@ -48,6 +48,9 @@ language.
 You may change the language of a running RESL with the #LANG command.
 >#LANG -ru
 
+You can hsay your X clipboard with the #CLIP command.
+>#CLIP
+
 hsay also works well with pipes.
 
 
